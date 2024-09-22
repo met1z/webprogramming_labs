@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Використання блоків (Пункт 5)</title>
+	<style>
+		.block {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: lightblue;
+			border-radius: 12px;
+			width: 100%;
+			height: 400px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Використання блоків (Пункт 5)</h1>
+	<h3>5.1</h3>
+
+	<div style="display: flex; gap: 16px;">
+		<div class="block">
+			<h1>Block 1</h1>
+		</div>
+		<div class="block">
+			<h1>Block 2</h1>
+		</div>
+		<div class="block">
+			<h1>Block 3</h1>
+		</div>
+	</div>
+
+	<hr />
+
+	<h3>5.2</h3>
+
+	<div style="display: flex; gap: 16px;">
+		<div class="block">
+			<h1>Table Block</h1>
+			<table border="1">
+				<tr>
+					<th>Ім'я</th>
+					<th>Прізвище</th>
+				</tr>
+				<tr>
+					<td>Віктор</td>
+					<td>Звонарьов</td>
+				</tr>
+				<tr>
+					<td>Дмитро</td>
+					<td>Патеруха</td>
+				</tr>
+			</table>
+		</div>
+		<div class="block">
+			<h1>Image Block</h1>
+			<img src="image.jpg" alt="Зображення" style="height: 250px;">
+		</div>
+	</div>
+</body>
+
+</html>
