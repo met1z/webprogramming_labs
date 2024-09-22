@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>1.	Дослідження особливостей сумісного використання декількох таблиць стилів.</title>
+	<link rel="stylesheet" href="./styles/style1.css">
+	<style>
+		@import url('./styles/imported1.css');
+	</style>
+</head>
+
+<body>
+	<h1>1.	Дослідження особливостей сумісного використання декількох таблиць стилів.</h1>
+	<div class="box" style="background-color: lightgreen; padding: 20px;">1.1) Цей блок має різні стилі (перемагаэ атрібут стайл)</div>
+	<div class="box" style="padding: 20px;">1.2) Цей блок має різні стилі (перемагаэ те що об'явлено пізніше)</div>
+	<div class="box-2" style="padding: 20px;">1.3) Цей блок має ті самі стилі, але біля червоного стоїть important (перемагаэ !important)</div>
+</body>
+
+</html>
