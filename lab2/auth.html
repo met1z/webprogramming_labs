@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Вход/Регистрация</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Вход/Регистрация</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="gallery.html">Галерея</a></li>
+				<li><a href="upload.html">Загрузить Медиа</a></li>
+				<li><a href="auth.html">Вход/Регистрация</a></li>
+				<li><a href="contact.html">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <form id="register-form" class="hidden">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" required>
+
+        <label for="confirm-password">Подтвердите пароль:</label>
+        <input type="password" id="confirm-password" required>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+
+    <form id="login-form" class="hidden">
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" required>
+
+        <label for="login-password">Пароль:</label>
+        <input type="password" id="login-password" required>
+
+        <button type="submit">Войти</button>
+    </form>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>

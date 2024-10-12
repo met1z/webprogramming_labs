@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Галерея Фото и Видео</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Галерея</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="gallery.html">Галерея</a></li>
+				<li><a href="upload.html">Загрузить Медиа</a></li>
+				<li><a href="auth.html">Вход/Регистрация</a></li>
+				<li><a href="contact.html">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="gallery">
+		<div style="width: 100%">
+			<button id="filter-weekday">Будни</button>
+			<button id="filter-holiday">Праздники</button>
+			<button id="filter-all">Все</button>
+		</div>
+
+		<div class="media-item weekday"><img src="img/weekday1.jpg" alt="Будни 1"></div>
+		<div class="media-item holiday"><img src="img/holiday1.jpg" alt="Праздники 1"></div>
+		<div class="media-item weekday"><img src="img/weekday2.jpg" alt="Будни 2"></div>
+		<div class="media-item holiday"><img src="img/holiday2.jpg" alt="Праздники 2"></div>
+	</section>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>

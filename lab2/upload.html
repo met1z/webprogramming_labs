@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Загрузка Медиа</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Загрузка Медиа</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="gallery.html">Галерея</a></li>
+				<li><a href="upload.html">Загрузить Медиа</a></li>
+				<li><a href="auth.html">Вход/Регистрация</a></li>
+				<li><a href="contact.html">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<form id="upload-form">
+		<label for="title">Название:</label>
+		<input type="text" id="title" required>
+
+		<label for="description">Описание:</label>
+		<input type="text" id="description">
+
+		<label for="type">Тип:</label>
+		<select id="type">
+			<option value="photo">Фото</option>
+			<option value="video">Видео</option>
+		</select>
+
+		<label for="date">Дата:</label>
+		<input type="date" id="date">
+
+		<button type="submit">Загрузить</button>
+	</form>
+
+	<div id="media-list"></div>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
